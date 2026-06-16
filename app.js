@@ -38,10 +38,10 @@ function simplify(text) {
       .replace(/[ \t]{2,}/g, " ")
       .replace(/\s+([,.!?;:])/g, "$1")
       // Hide "..." so the next rule does not insert spaces between the dots.
-      .replace(/\.\.\./g, ELLIPSIS)
+      // .replace(/\.\.\./g, ELLIPSIS)
       // Space after punctuation if the next char isn’t whitespace (e.g. "word,word" → "word, word").
-      .replace(/([,.!?;:])([^\s])/g, "$1 $2")
-      .replace(new RegExp(ELLIPSIS, "g"), "...")
+      // .replace(/([,.!?;:])([^\s])/g, "$1 $2")
+      // .replace(new RegExp(ELLIPSIS, "g"), "...")
       // Undo false positives for times/numbers: first pass turns "12:30" into "12: 30" — strip that space.
       .replace(/(\d)([:.,]) (\d)/g, "$1$2$3")
       .replace(new RegExp(RANGE, "g"), "-")
