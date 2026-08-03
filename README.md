@@ -1,5 +1,9 @@
 # UnGPT — Unnecessary Garbage Pruner & Transformer
 
+<p align="center">
+  <img src="icons/icon-192.png" alt="UnGPT icon" width="128" />
+</p>
+
 UnGPT is a simple tool that cleans text from unnecessary typography and visual noise.
 
 It removes:
@@ -9,6 +13,8 @@ It removes:
 * excessive formatting
 
 And leaves you with clean, readable text.
+
+![UnGPT app screenshot](assets/ungpt-app-screen-1.png)
 
 ---
 
